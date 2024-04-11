@@ -21,15 +21,14 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "RestConvert Maintainers",
+    "email": "4557674+pngan@users.noreply.github.com"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Phil Ngan",
+      "email": "phillip.ngan@gmail.com",
+      "url": "https://github.com/pngan"
     }
   ],
   "main": "./src/main/main.ts",
