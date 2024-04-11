@@ -3,7 +3,7 @@
 <br>
 
 <p>
-  RestConvert uses <a href="https://electron-react-boilerplate.js.org/">Electron React Boilerplate</a>
+  rest-convert uses <a href="https://electron-react-boilerplate.js.org/">Electron React Boilerplate</a>
 </p>
 
 <br>
@@ -20,12 +20,10 @@
 Clone the repo and install dependencies:
 
 ```bash
-git clone --depth 1 --branch main git@github.com:pngan/RestConvert.git your-project-name
+git clone --depth 1 --branch main git@github.com:pngan/rest-convert.git your-project-name
 cd your-project-name
 npm install
 ```
-
-**Having issues installing? See our [debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
 
 ## Starting Development
 
@@ -45,8 +43,8 @@ npm run package
 
 ## License
 
-MIT © [RestConvert](https://github.com/pngan/RestConvert.git)
+MIT © [rest-convert](https://github.com/pngan/rest-convert.git)
 
-[github-actions-status]: https://github.com/pngan/RestConvert/workflows/Test/badge.svg
-[github-actions-url]: https://github.com/pngan/RestConvert/actions
-[github-tag-url]: https://github.com/pngan/RestConvert/releases/latest
+[github-actions-status]: https://github.com/pngan/rest-convert/workflows/Test/badge.svg
+[github-actions-url]: https://github.com/pngan/rest-convert/actions
+[github-tag-url]: https://github.com/pngan/rest-convert/releases/latest

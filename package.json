@@ -11,17 +11,17 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/pngan/rest-convert#readme",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/pngan/rest-convert/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/pngan/rest-convert.git"
   },
   "license": "MIT",
   "author": {
-    "name": "RestConvert Maintainers",
+    "name": "rest-convert Maintainers",
     "email": "4557674+pngan@users.noreply.github.com"
   },
   "contributors": [
@@ -170,8 +170,8 @@
     "webpack-merge": "^5.9.0"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "RestConvert",
+    "appId": "org.erb.RestConvert",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [

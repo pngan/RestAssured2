@@ -57,14 +57,14 @@ export default class MenuBuilder {
       label: 'Electron',
       submenu: [
         {
-          label: 'About RestConvert',
+          label: 'About rest-convert',
           selector: 'orderFrontStandardAboutPanel:',
         },
         { type: 'separator' },
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide RestConvert',
+          label: 'Hide rest-convert',
           accelerator: 'Command+H',
           selector: 'hide:',
         },

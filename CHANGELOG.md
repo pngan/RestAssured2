@@ -2,4 +2,4 @@
 
 #### Features
 
-- Inherited project from [React Boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate)
+- Inherited project from [React Boilerplate](https://github.com/pngan/rest-convert)
