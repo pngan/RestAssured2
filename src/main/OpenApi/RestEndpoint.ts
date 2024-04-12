@@ -13,7 +13,13 @@ export default class RestEndpoint {
 
   is_selected: Boolean;
 
-  constructor(id: String, method: String, path: String, summary: String, is_selected: Boolean) {
+  constructor(
+    id: String,
+    method: String,
+    path: String,
+    summary: String,
+    is_selected: Boolean,
+  ) {
     this.id = id;
     this.method = method;
     this.path = path;

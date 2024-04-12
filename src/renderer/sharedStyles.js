@@ -31,5 +31,6 @@ export const RightCol = styled.div`
 export const DataWindow = styled.div`
   border: solid black;
   border-width: 3px;
+  white-space: pre-wrap;
 `;
 

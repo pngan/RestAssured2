@@ -7,6 +7,7 @@ import EndpointsList from './EndpointsList';
 import OutputSelect from './OutputSelect';
 import ConvertButton from './ConvertButton';
 import Output from './Output';
+import SaveButton from './SaveButton';
 
 const Container = styled.div`
   background-color: darkslategrey;
@@ -77,6 +78,7 @@ function Hello() {
           setOutputFormat={setOutputFormat}
         />
         <Output convertedData={convertedData[0]} />
+        <SaveButton convertedData={convertedData} />
       </Column>
     </Container>
   );
