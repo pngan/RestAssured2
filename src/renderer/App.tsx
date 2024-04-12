@@ -6,6 +6,7 @@ import SourceInputSelection from './SourceInputSelection';
 import EndpointsList from './EndpointsList';
 import OutputSelect from './OutputSelect';
 import ConvertButton from './ConvertButton';
+import Output from './Output';
 
 const Container = styled.div`
   background-color: darkslategrey;
@@ -75,7 +76,7 @@ function Hello() {
           setConvertedData={setConvertedData}
           setOutputFormat={setOutputFormat}
         />
-        <BottomControl>Panel</BottomControl>
+        <Output convertedData={convertedData[0]} />
       </Column>
     </Container>
   );

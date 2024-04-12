@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import ConverterCollection from './converter/ConverterCollection';
 
-//const ConverterCollection = require('../converter/converter.js');
-
 const Button = styled.button`
   height: 30px;
 `;
+
+const convertSelectedEndpoints = async (data, outputFormat) => {
+  const converterCollection = new ConverterCollection();
+  converterCollection.setSelectedConverter(outputFormat);
+  const converter = converterCollection.getSelectedConverter();
+  return converter.convert(data);
+};
 
 function ConvertButton({
   data,
@@ -20,8 +25,7 @@ function ConvertButton({
     const filteredData = data.filter((endpoint) => {
       return selectedEndpoints.includes(endpoint.id);
     });
-    // const fileData = await convertSelectedEndpoints({arrEndpoints: filteredData, refs: refs}, outputFormat);
-    const fileData = await convertSelectedEndpoints2(
+    const fileData = await convertSelectedEndpoints(
       { arrEndpoints: filteredData, schemas },
       outputFormat,
     );
@@ -36,21 +40,5 @@ function ConvertButton({
     >{`Convert =>`}</Button>
   );
 }
-
-const convertSelectedEndpoints2 = async function (data, outputFormat) {
-  const converterCollection = new ConverterCollection();
-  converterCollection.setSelectedConverter(outputFormat);
-  const converter = converterCollection.getSelectedConverter();
-  console.log(data);
-  return converter.convert(data);
-};
-
-
-// convertSelectedEndpoints2(data, outputFormat) {
-//   const converterCollection = new ConverterCollection();
-//   converterCollection.setSelectedConverter(outputFormat);
-//   const converter = converterCollection.getSelectedConverter();
-//   return converter.convert(data);
-// };
 
 export default ConvertButton;
