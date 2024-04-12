@@ -42,7 +42,7 @@ To create a Release on this repository:
 - Create and push tags. The version must start with a `v`, e.g. `v1.2.3` git tag 
 ```bash
 git tag v1.2.3
-git push --tags
+git push origin v1.2.3
 ```
 
 This will automatically create a new draft release in the repository. After the products have been tests, then the release can be manually *published*.

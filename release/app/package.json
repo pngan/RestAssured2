@@ -1,6 +1,6 @@
 {
   "name": "rest-convert",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool for converting OpenApi documents to REST queries",
   "license": "MIT",
   "author": {
