@@ -1,6 +1,8 @@
+import RestEndpoint from "./RestEndpoint";
+
 const OpenAPIParser = require('@readme/openapi-parser');
 const { default: QueryParameter } = require('./QueryParameter');
-const { default: RestEndpoint } = require('./RestEndpoint');
+// const { default: RestEndpoint } = require('./RestEndpoint');
 
 export default async function getOpenApiEndpoints(strDocPath) {
   try {
@@ -9,16 +11,15 @@ export default async function getOpenApiEndpoints(strDocPath) {
     const arrEndpoints: RestEndpoint[] = [];
     Object.entries(api.paths).forEach(([endpoint, methods], pathIndex) => {
       Object.entries(methods).forEach(([method, data], methodIndex) => {
-
         const ep = new RestEndpoint(
           `${pathIndex}${methodIndex}${Math.floor(
             Math.random() * 10000000,
           ).toString()}`,
           method.toUpperCase(),
           endpoint,
+          data.summary,
           true
         );
-
 
         // Parser query parameters
         if (data.parameters !== undefined) {

@@ -5,6 +5,7 @@ import './App.css';
 import SourceInputSelection from './SourceInputSelection';
 import EndpointsList from './EndpointsList';
 import OutputSelect from './OutputSelect';
+import ConvertButton from './ConvertButton';
 
 const Container = styled.div`
   background-color: darkslategrey;
@@ -43,6 +44,7 @@ const BottomControl = styled.div`
 
 function Hello() {
   const [data, setData] = useState([]);
+  const [schemas, setSchemas] = useState([]);
   const [selectedEndpoints, setSelectedEndpoints] = useState([]);
   const [convertedData, setConvertedData] = useState([]);
   const [outputFormat, setOutputFormat] = useState('Rest Client');
@@ -50,7 +52,7 @@ function Hello() {
   return (
     <Container>
       <Column>
-        <SourceInputSelection setData={setData} />
+        <SourceInputSelection setData={setData} setSchemas={setSchemas} />
         <EndpointsList
           setSelectedEndpoints={setSelectedEndpoints}
           selectedEndpoints={selectedEndpoints}
@@ -59,8 +61,14 @@ function Hello() {
       </Column>
       <FixedColumn>
         <TopControl>Input</TopControl>
-
-        <BottomControl>Panel</BottomControl>
+        <ConvertButton
+          data={data}
+          schemas={schemas}
+          outputFormat={outputFormat}
+          // convertSelectedEndpoints={convertSelectedEndpoints}
+          selectedEndpoints={selectedEndpoints}
+          setConvertedData={setConvertedData}
+        />
       </FixedColumn>
       <Column>
         <OutputSelect
