@@ -1,7 +1,7 @@
 {
   "name": "rest-convert",
-  "version": "0.0.0",
-  "description": "A foundation for scalable desktop apps",
+  "version": "0.0.1",
+  "description": "A tool for converting OpenApi documents to REST queries",
   "license": "MIT",
   "author": {
     "name": "rest-convert Maintainers",

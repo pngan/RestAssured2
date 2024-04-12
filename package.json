@@ -1,5 +1,5 @@
 {
-  "description": "A foundation for scalable desktop apps",
+  "description": "A tool for converting OpenApi documents to REST queries",
   "keywords": [
     "electron",
     "boilerplate",
