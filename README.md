@@ -1,11 +1,5 @@
-<img src=".erb/img/erb-banner.svg" width="100%" />
 
-<br>
-
-<p>
-  rest-convert uses <a href="https://electron-react-boilerplate.js.org/">Electron React Boilerplate</a>
-</p>
-
+# Rest Convert
 <br>
 
 <div align="center">
@@ -40,6 +34,21 @@ To package apps for the local platform:
 ```bash
 npm run package
 ```
+
+
+## Publish a Release
+
+To create a Release on this repository:
+- Update the version number in the file `release\app\package.json`. Version numbers follow the semver conventional.
+- Commit and push this change to the `main` branch.
+- Create and push tags. The version must start with a `v`, e.g. `v1.2.3` git tag 
+```bash
+git tag v1.2.3
+git push --tags
+```
+
+This will automatically create a new draft release in the repository. After the products have been tests, then the release can be manually *published*.
+
 
 ## License
 
