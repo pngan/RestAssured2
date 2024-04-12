@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './App.css';
 import SourceInputSelection from './SourceInputSelection';
 import EndpointsList from './EndpointsList';
+import OutputSelect from './OutputSelect';
 
 const Container = styled.div`
   background-color: darkslategrey;
@@ -43,15 +44,18 @@ const BottomControl = styled.div`
 function Hello() {
   const [data, setData] = useState([]);
   const [selectedEndpoints, setSelectedEndpoints] = useState([]);
+  const [convertedData, setConvertedData] = useState([]);
+  const [outputFormat, setOutputFormat] = useState('Rest Client');
 
   return (
     <Container>
       <Column>
         <SourceInputSelection setData={setData} />
         <EndpointsList
-                setSelectedEndpoints={setSelectedEndpoints}
-                selectedEndpoints={selectedEndpoints}
-                data={data}/>
+          setSelectedEndpoints={setSelectedEndpoints}
+          selectedEndpoints={selectedEndpoints}
+          data={data}
+        />
       </Column>
       <FixedColumn>
         <TopControl>Input</TopControl>
@@ -59,7 +63,10 @@ function Hello() {
         <BottomControl>Panel</BottomControl>
       </FixedColumn>
       <Column>
-        <TopControl>Input</TopControl>
+        <OutputSelect
+          setConvertedData={setConvertedData}
+          setOutputFormat={setOutputFormat}
+        />
         <BottomControl>Panel</BottomControl>
       </Column>
     </Container>

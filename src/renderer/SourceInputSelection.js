@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
+import { InputWrapper, Label } from './sharedStyles';
 
 const LoadButton = styled.button`
   margin-left: 10px;
@@ -19,17 +20,6 @@ const SourceInput = styled.input`
 const InputButtonWrapper = styled.div`
   display: flex;
   text-align: left;
-  width: 100%;
-`;
-
-const Label = styled.label`
-  margin-right: 10px;
-`;
-
-const InputWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   width: 100%;
 `;
 
