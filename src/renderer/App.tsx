@@ -1,29 +1,16 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
+import styled from 'styled-components';
 import './App.css';
+
+const Container = styled.div`
+  margin-top: 20px;
+`
 
 function Hello() {
   return (
-    <div>
-      <div className="Hello">
-        <img width="200" alt="icon" src={icon} />
-      </div>
+    <Container className="container">
       <h1>RestConvert</h1>
-      <div className="Hello">
-        <a
-          href="https://electron-react-boilerplate.js.org/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button type="button">
-            <span role="img" aria-label="books">
-              📚
-            </span>
-            Read our docs
-          </button>
-        </a>
-      </div>
-    </div>
+    </Container>
   );
 }
 
