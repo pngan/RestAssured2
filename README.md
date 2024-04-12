@@ -1,11 +1,9 @@
 
-# Rest Convert
-<br>
-
-<div align="center">
-
+# Rest Convert 
 [![Build Status][github-actions-status]][github-actions-url]
 [![Github Tag][github-tag-image]][github-tag-url]
+
+<div align="center">
 
 </div>
 
@@ -57,3 +55,4 @@ MIT © [rest-convert](https://github.com/pngan/rest-convert.git)
 [github-actions-status]: https://github.com/pngan/rest-convert/workflows/Test/badge.svg
 [github-actions-url]: https://github.com/pngan/rest-convert/actions
 [github-tag-url]: https://github.com/pngan/rest-convert/releases/latest
+[github-tag-image]: https://img.shields.io/github/tag/pngan/rest-convert.svg?label=version
