@@ -26,4 +26,10 @@ const electronHandler = {
 
 contextBridge.exposeInMainWorld('electron', electronHandler);
 
+contextBridge.exposeInMainWorld('convert', {
+  triggerFileLoad: async (args: any) => {
+    return await ipcRenderer.invoke('trigger-file-load', args);
+  },
+});
+
 export type ElectronHandler = typeof electronHandler;

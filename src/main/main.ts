@@ -14,6 +14,8 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
+const getOpenApiEndpoints = require('./OpenApi/getOpenApiEndpoints.ts');
+
 
 class AppUpdater {
   constructor() {
@@ -71,8 +73,8 @@ const createWindow = async () => {
 
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
+    width: 1280,
+    height: 1024,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       preload: app.isPackaged
@@ -132,6 +134,10 @@ app
       // On macOS it's common to re-create a window in the app when the
       // dock icon is clicked and there are no other windows open.
       if (mainWindow === null) createWindow();
+    });
+    ipcMain.handle('trigger-file-load', async (_event, strDocPath) => {
+      const response = await getOpenApiEndpoints.getOpenApiEndpoints(strDocPath);
+      return response.data.arrEndpoints;
     });
   })
   .catch(console.log);
