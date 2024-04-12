@@ -14,8 +14,8 @@ import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import MenuBuilder from './menu';
 import { resolveHtmlPath } from './util';
-const getOpenApiEndpoints = require('./OpenApi/getOpenApiEndpoints.ts');
-
+// const getOpenApiEndpoints = require('./OpenApi/getOpenApiEndpoints.ts');
+import getOpenApiEndpoints from './OpenApi/getOpenApiEndpoints';
 
 class AppUpdater {
   constructor() {
@@ -136,7 +136,7 @@ app
       if (mainWindow === null) createWindow();
     });
     ipcMain.handle('trigger-file-load', async (_event, strDocPath) => {
-      const response = await getOpenApiEndpoints.getOpenApiEndpoints(strDocPath);
+      const response = await getOpenApiEndpoints(strDocPath);
       return response.data.arrEndpoints;
     });
   })

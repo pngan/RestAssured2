@@ -40,4 +40,3 @@ export default async function getOpenApiEndpoints(strDocPath) {
   }
 }
 
-module.exports = { getOpenApiEndpoints };
