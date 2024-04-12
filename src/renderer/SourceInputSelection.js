@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
-import { useApp } from '../AppProvider';
 
 const LoadButton = styled.button`
   margin-left: 10px;
@@ -38,7 +37,6 @@ function SourceInputSelection(props) {
   const [fileOrUrl, setFileOrUrl] = useState(
     'https://petstore3.swagger.io/api/v3/openapi.json',
   );
-  const { loadOpenApiContentFromFileOrRequest } = useApp();
   const inputElement = useRef();
   const updateSourceValue = (event) => {
     // add debounce
@@ -46,15 +44,8 @@ function SourceInputSelection(props) {
   };
 
   const loadOpenApiContent = async (event) => {
-    //const data = await loadOpenApiContentFromFileOrRequest(fileOrUrl);
-
-    const data = await window.convert.triggerFileLoad(fileOrUrl);
-
-    if (data === undefined) {
-      props.setData([]);
-    } else {
-      props.setData(data);
-    }
+    const arrEndpoints = await window.convert.triggerFileLoad(fileOrUrl);
+    props.setData(arrEndpoints ?? []);
   };
 
   const fileUploadSelect = () => {

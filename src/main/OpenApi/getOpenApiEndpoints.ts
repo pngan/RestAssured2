@@ -5,8 +5,6 @@ const { default: RestEndpoint } = require('./RestEndpoint');
 export default async function getOpenApiEndpoints(strDocPath) {
   try {
     const api = await OpenAPIParser.parse(strDocPath);
-
-
     const refs = await OpenAPIParser.resolve(strDocPath);
     const arrEndpoints: RestEndpoint[] = [];
     Object.entries(api.paths).forEach(([endpoint, methods], pathIndex) => {
@@ -32,7 +30,6 @@ export default async function getOpenApiEndpoints(strDocPath) {
         arrEndpoints.push(ep);
       });
     });
-    console.log(arrEndpoints);
     return {
       response: 'success',
       data: { arrEndpoints, refs },

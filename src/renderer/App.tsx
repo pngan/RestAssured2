@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import './App.css';
 import SourceInputSelection from './SourceInputSelection';
+import EndpointsList from './EndpointsList';
 
 const Container = styled.div`
   background-color: darkslategrey;
@@ -41,11 +42,16 @@ const BottomControl = styled.div`
 
 function Hello() {
   const [data, setData] = useState([]);
+  const [selectedEndpoints, setSelectedEndpoints] = useState([]);
+
   return (
     <Container>
       <Column>
         <SourceInputSelection setData={setData} />
-        <BottomControl>Panel</BottomControl>
+        <EndpointsList
+                setSelectedEndpoints={setSelectedEndpoints}
+                selectedEndpoints={selectedEndpoints}
+                data={data}/>
       </Column>
       <FixedColumn>
         <TopControl>Input</TopControl>
