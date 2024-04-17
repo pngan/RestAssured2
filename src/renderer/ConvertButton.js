@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import ConverterCollection from './converter/ConverterCollection';
 
 const Button = styled.button`
-  height: 30px;
+  display: flex;
+  align-items: center;
 `;
 
 const convertSelectedEndpoints = async (data, outputFormat) => {

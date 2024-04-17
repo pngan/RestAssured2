@@ -10,7 +10,6 @@ import Output from './Output';
 import SaveButton from './SaveButton';
 
 const Container = styled.div`
-  background-color: darkslategrey;
   display: flex;
   flex-direction: row;
   top: 10px;
@@ -23,25 +22,14 @@ const Container = styled.div`
 const Column = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  background: red;
+  width: 80%;
 `;
 const FixedColumn = styled.div`
   display: flex;
   flex-direction: column;
   width: 120px;
-  background: lightgreen;
-`;
-
-const TopControl = styled.div`
-  height: 100px;
-  background: yellow;
-`;
-
-const BottomControl = styled.div`
-  background: orange;
-  margin: 10px;
-  height: 100%;
+  justify-content: center;
+}
 `;
 
 function Hello() {
@@ -62,7 +50,6 @@ function Hello() {
         />
       </Column>
       <FixedColumn>
-        <TopControl>Input</TopControl>
         <ConvertButton
           data={data}
           schemas={schemas}

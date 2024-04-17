@@ -4,8 +4,9 @@ import ConverterCollection from './converter/ConverterCollection';
 import { InputWrapper, Label } from './sharedStyles';
 
 const Select = styled.select`
-  height: 30px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 function OutputSelect({ setConvertedData, setOutputFormat}) {

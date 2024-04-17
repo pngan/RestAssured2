@@ -3,20 +3,21 @@ import styled from 'styled-components';
 import { DataWindow } from './sharedStyles';
 
 const Wrapper = styled.section`
-  margin-top: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
 const Content = styled(DataWindow)`
-  width: 100%;
-  height: 400px;
-  box-shadow: 0px 0.5px 1px #888888;
-  border-radius: 6px;
-  margin-top: 10px;
+  width: 95%;
+  flex: 1;
   overflow: scroll;
 `;
 
-const Title = styled.span``;
+const Title = styled.span`
+  margin-top: 20px;
+  margin-bottom: 10px;
+`;
 
 function Output({ convertedData }) {
   return (

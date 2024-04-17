@@ -5,10 +5,7 @@ export const Label = styled.label`
 `;
 
 export const InputWrapper = styled.div`
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100%;
+
 `;
 
 export const LeftCol = styled.div`

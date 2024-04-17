@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import EndpointCheckbox from './EndpointCheckbox';
 import SelectAllCheckbox from './SelectAllCheckbox';
 
-const Wrapper = styled.section`
-  margin-top: 20px;
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: 100%;
 `;
 
 const DataWindow = styled.div`
@@ -16,18 +15,14 @@ const DataWindow = styled.div`
 `;
 
 const Content = styled(DataWindow)`
-  padding: 1em;
-  width: 100%;
+  width: 95%;
   box-shadow: 0px 0.5px 1px #888888;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 400px;
-  overflow: scroll;
+  flex: 1;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.span`
+  margin-top: 20px;
   margin-bottom: 10px;
 `;
 

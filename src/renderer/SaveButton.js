@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import JSZip from 'jszip';
 
 const Button = styled.button`
-  margin-top: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
 `;
 
 function SaveButton({ convertedData }) {
