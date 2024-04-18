@@ -9,6 +9,7 @@ const Select = styled.select`
   flex-direction: column;
   background: #404040;
   height: 30px;
+  color: white;
 `;
 
 function OutputSelect({ setConvertedData, setOutputFormat}) {

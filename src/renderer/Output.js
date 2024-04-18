@@ -12,6 +12,7 @@ const Content = styled(DataWindow)`
   width: 95%;
   flex: 1;
   overflow: scroll;
+  font-family: "Lucida Console", Courier, monospace;
 `;
 
 const Title = styled.span`

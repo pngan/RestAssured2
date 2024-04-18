@@ -19,6 +19,7 @@ const Content = styled(DataWindow)`
   box-shadow: 0px 0.5px 1px #888888;
   flex: 1;
   margin-bottom: 20px;
+  font-family: "Lucida Console", Courier, monospace;
 `;
 
 const Title = styled.span`

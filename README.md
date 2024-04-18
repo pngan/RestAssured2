@@ -32,7 +32,7 @@ To package apps for the local platform:
 ```bash
 npm run package
 ```
-
+The installer appears in `release\build`.
 
 ## Publish a Release
 

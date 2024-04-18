@@ -5,22 +5,10 @@ import { InputWrapper, Label } from './sharedStyles';
 const LoadButton = styled.button`
   margin-left: 10px;
   flex-grow: 1;
-  &:hover {
-    background: #3f3f46;
-  }
-  border: 2px solid #575757;
-  padding: 2px;
-  border-radius: 8px;
 `;
 const BrowseButton = styled.button`
   margin-left: 10px;
   flex-grow: 1;
-  &:hover {
-    background: #3f3f46;
-  }
-  border: 2px solid #575757;
-  padding:  2px;
-  border-radius: 8px;
 `;
 const FileInput = styled.input`
   display: none;
@@ -28,6 +16,7 @@ const FileInput = styled.input`
 const SourceInput = styled.input`
   flex-grow: 10;
   background: #404040;
+  color: #d4d4d4;
 `;
 
 const InputButtonWrapper = styled.div`

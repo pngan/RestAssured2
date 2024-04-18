@@ -6,6 +6,7 @@ body {
   width: 100%;
   background: #1e1e1e;
   color: #d4d4d4;
+  font: normal 16px Verdana, Arial, sans-serif;
 }
 
 button {
@@ -13,10 +14,15 @@ button {
   appearance: none;
   transition: all ease-in 0.1s;
   cursor: pointer;
-  background: red;
+  border: 2px solid #575757;
+  padding: 2px;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #d4d4d4;
 }
 
 button:hover {
+  background: #3f3f46;
   transform: scale(1.05);
   opacity: 1;
 }
