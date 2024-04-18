@@ -1,14 +1,11 @@
-@import 'tailwindcss/base';
 
-@import 'tailwindcss/components';
-
-@import 'tailwindcss/utilities';
 
 body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: firebrick;
+  background: #1e1e1e;
+  color: #d4d4d4;
 }
 
 button {
@@ -16,6 +13,7 @@ button {
   appearance: none;
   transition: all ease-in 0.1s;
   cursor: pointer;
+  background: red;
 }
 
 button:hover {
@@ -44,3 +42,11 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
+
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';

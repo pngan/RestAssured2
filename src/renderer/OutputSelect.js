@@ -7,6 +7,8 @@ const Select = styled.select`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background: #404040;
+  height: 30px;
 `;
 
 function OutputSelect({ setConvertedData, setOutputFormat}) {

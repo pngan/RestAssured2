@@ -23,11 +23,13 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
+  padding: 20px;
 `;
+
 const FixedColumn = styled.div`
   display: flex;
   flex-direction: column;
-  width: 120px;
+  width: 100px;
   justify-content: center;
 }
 `;

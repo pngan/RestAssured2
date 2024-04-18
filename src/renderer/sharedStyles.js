@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Label = styled.label`
-  margin-right: 10px;
+  margin-bottom: 10px;
 `;
 
 export const InputWrapper = styled.div`
-
+  display: flex;
+  flex-direction: column;
 `;
 
 export const LeftCol = styled.div`

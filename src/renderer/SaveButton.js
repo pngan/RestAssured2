@@ -5,6 +5,13 @@ import JSZip from 'jszip';
 const Button = styled.button`
 margin-top: 20px;
 margin-bottom: 20px;
+
+&:hover {
+  background: #3f3f46;
+}
+border: 2px solid #575757;
+padding: 8px;
+border-radius: 8px;
 `;
 
 function SaveButton({ convertedData }) {

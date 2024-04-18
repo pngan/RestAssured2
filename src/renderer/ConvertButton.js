@@ -5,6 +5,12 @@ import ConverterCollection from './converter/ConverterCollection';
 const Button = styled.button`
   display: flex;
   align-items: center;
+  &:hover {
+    background: #3f3f46;
+  }
+  border: 2px solid #575757;
+  padding:8px;
+  border-radius: 8px;
 `;
 
 const convertSelectedEndpoints = async (data, outputFormat) => {
@@ -34,11 +40,9 @@ function ConvertButton({
   };
 
   return (
-    <Button
-      className="btn btn-secondary btn-sm"
-      type="button"
-      onClick={convertOpenApi}
-    >{`Convert =>`}</Button>
+    <Button type="button" onClick={convertOpenApi}>
+      Convert
+    </Button>
   );
 }
 
