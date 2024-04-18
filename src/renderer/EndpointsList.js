@@ -12,6 +12,7 @@ const Wrapper = styled.div`
 const DataWindow = styled.div`
   border: solid black;
   border-width: 3px;
+  overflow: auto;
 `;
 
 const Content = styled(DataWindow)`

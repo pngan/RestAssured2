@@ -22,14 +22,13 @@ const Container = styled.div`
 const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
-  padding: 20px;
+  width: 45%;
 `;
 
 const FixedColumn = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100px;
+  width: 10%;
   justify-content: center;
 }
 `;
